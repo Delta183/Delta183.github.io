@@ -7,11 +7,11 @@ function NavbarComponent() {
   return (
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="/"><h2>Daniel Figueroa</h2></Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="/about">About Me</Nav.Link>
+            <Nav.Link href="/work">Works</Nav.Link>
+            <Nav.Link href="/resume">Resume</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
