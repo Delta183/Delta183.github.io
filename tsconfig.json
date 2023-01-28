@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // Something about adding  "node_modules/@types" fixed the App.test.tsx "test" and "expect" error
+    // Something about adding  "node_modules/@types" fixed the App.test.tsx "test" and "expect"
     "typeRoots": ["src/types.d.ts",  "node_modules/@types"],
     "types": ["node", "jest","mocha"],
     "target": "es5",
