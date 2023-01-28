@@ -1,10 +1,21 @@
 import React from 'react';
 import cat from '../resources/cat.jpeg';
+import Button from 'react-bootstrap/Button';
+import resumePDF from '../resources/Daniel Figueroa - Resume January 2023.pdf';
+
 // When using any bootstrap from react-bootstrap, this import is a prerequisite
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../resources/styles.css'
+
+// functions in TS need "function" preceding them
+function onResumeClick() {
+    window.open(resumePDF);
+  }
+
 function HomeComponent() {
+    
     return (
+        
         <div>
             <div className='container'>
                 {/* This is a preferable way of controlling the elements like with Swift */}
@@ -22,10 +33,13 @@ function HomeComponent() {
                     </div>
                 </div>
 
+               
+                
                 <div className='row'>
                     {/* d-flex needs to be on whichever element requires grid work */}
                     <div className="mt-1 col d-flex justify-content-center">
-                        <div className='subtitle' >Dreamer, Developer, Zoomer</div>
+                        {/* <div className='subtitle' >Dreamer, Developer, Zoomer</div> */}
+                        <Button variant="primary" onClick={onResumeClick}>My Resume</Button>{' '}
                     </div>
                 </div>
 
