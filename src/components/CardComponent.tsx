@@ -8,7 +8,6 @@ import Col from 'react-bootstrap/Col';
 interface IProps {
     title: string;
     description: string;
-    languages: string;
     langArray: string[];
 }
 

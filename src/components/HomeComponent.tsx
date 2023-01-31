@@ -8,6 +8,9 @@ import resumePDF from '../resources/Daniel Figueroa - Resume January 2023.pdf';
 import '../resources/styles.css'
 import FooterComponent from './FooterComponent';
 import CardComponent from './CardComponent';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 // functions in TS need "function" preceding them
 function onResumeClick() {
@@ -84,33 +87,42 @@ function HomeComponent() {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className="mt-1 col d-flex justify-content-center">
+                    <div className="mb-2 col d-flex justify-content-center">
                         <div className='header'>
                             Projects
                         </div>
                     </div>
                 </div>
-                <div className='row'>
-                    <div className="mt-1 col d-flex justify-content-center">
-                        <div className='list'>
-                            <ul>
-                                <li><b>WNHL Mobile Application (iOS and Android)</b> - A navigational app for tracking games and statistics of the Welland Niagara Hockey League. Written in Swift and Java respectively.</li>
-                                <li><b>Rose Cottage Visiting Volunteers Mobile Applications (iOS/Android/React)</b> - Administrative site written in React that manages the database of both iOS and Android applications that allows users and admins alike to access the services of Rose Cottage more easily. Written in SwiftUI and Kotlin respectively.</li>
-                                <li><b>Luna Diary Mobile Application (iOS)</b> - Diary app with a myriad of means to navigate many different dates for entries with the ability to export entries as PDFs. Written in SwiftUI.</li>
-                                <li><b>OMDb Movie Nomination Website (React)</b> - A website utilizing the OMDb API to provide a means to search for many movies and subsequently nominate them. Written in React Typescript. </li>
-                                <li><b>Rate My Scholar Website (React)</b> - A website that takes inspiration from RateMyProfessor but extends to scholars and staff alike. Written in React.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
                   {/* Cards for the projects below */}
-                  <div className='col'>
-                    <CardComponent 
-                        title={'WNHL Mobile Application'}
-                        description={'A navigational app for tracking games and statistics of the Welland Niagara Hockey League.'}
-                        languages={'iOS and Android'} 
-                        langArray={['iOS','Android']}                    />
-                </div>
+                  <Container fluid>
+                    <Row>
+                        <CardComponent 
+                            title={'WNHL Mobile Application (iOS and Android)'}
+                            description={'A navigational app for tracking games and statistics of the Welland Niagara Hockey League.'}
+                            langArray={['Swift','Java']}                    
+                        />
+                        <CardComponent 
+                            title={'Rose Cottage Visiting Volunteers Mobile Applications (iOS and Android)'}
+                            description={'Administrative site written in React that manages the database of both iOS and Android applications that allows users and admins alike to access the services of Rose Cottage more easily.'}
+                            langArray={['SwiftUI','Kotlin','React']}                    
+                        />
+                         <CardComponent 
+                            title={'Luna Diary Mobile Application (iOS)'}
+                            description={'Diary app with a myriad of means to navigate many different dates for entries with the ability to export entries as PDFs.'}
+                            langArray={['SwiftUI']}                    
+                        />
+                         <CardComponent 
+                            title={'OMDb Movie Nomination Website'}
+                            description={'A website utilizing the OMDb API to provide a means to search for many movies and subsequently nominate them.'}
+                            langArray={['React', 'Typescript']}                    
+                        />
+                         <CardComponent 
+                            title={'Rate My Scholar Website'}
+                            description={'A website that takes inspiration from RateMyProfessor but extends to scholars and staff alike.'}
+                            langArray={['React']}                    
+                        />
+                    </Row>
+                </Container>
               
                            
 
