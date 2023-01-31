@@ -7,6 +7,7 @@ import resumePDF from '../resources/Daniel Figueroa - Resume January 2023.pdf';
 // When using any bootstrap from react-bootstrap, this import is a prerequisite
 import '../resources/styles.css'
 import FooterComponent from './FooterComponent';
+import CardComponent from './CardComponent';
 
 // functions in TS need "function" preceding them
 function onResumeClick() {
@@ -102,8 +103,16 @@ function HomeComponent() {
                         </div>
                     </div>
                 </div>
-
-               
+                  {/* Cards for the projects below */}
+                  <div className='col'>
+                    <CardComponent 
+                        title={'WNHL Mobile Application'}
+                        description={'A navigational app for tracking games and statistics of the Welland Niagara Hockey League.'}
+                        languages={'iOS and Android'} 
+                        langArray={['iOS','Android']}                    />
+                </div>
+              
+                           
 
             {/* Second container end below */}
             </div> 
