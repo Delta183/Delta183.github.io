@@ -44,7 +44,7 @@ function HomeComponent() {
                 </div>
                 <div className='row'>
                         {/* d-flex needs to be on whichever element requires grid work */}
-                        <div className="mt-2 col d-flex justify-content-center">
+                        <div className="mb-3 col d-flex justify-content-center">
                             {/* <div className='subtitle' >Dreamer, Developer, Zoomer</div> */}
                             <Button variant="dark" onClick={onResumeClick}>My Resume</Button>{' '}
                         </div>
@@ -66,6 +66,22 @@ function HomeComponent() {
                             I like to keep things simple and always striving to improve.
                         </div>
                     </div>
+                    <div className='row'>
+                    <div className=" col d-flex justify-content-center">
+                        <div className='header'>
+                            Skills
+                        </div>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className="mb-3 col d-flex justify-content-center">
+                        <div className='desc'>
+                           My proficiencies lie in frontend development of web applications and mobile applications.
+                           <br/>
+                           Very experienced with the React, SwiftUI and Java.
+                        </div>
+                    </div>
+                </div>
                 <div className='row'>
                     <div className="mt-1 col d-flex justify-content-center">
                         <div className='header'>
@@ -77,32 +93,17 @@ function HomeComponent() {
                     <div className="mt-1 col d-flex justify-content-center">
                         <div className='list'>
                             <ul>
-                                <li>WNHL Mobile Application (iOS and Android) - A navigational app for tracking games and statistics</li>
-                                <li>Rose Cottage Visiting Volunteers Mobile Applications (iOS and Android)</li>
-                                <li>Luna Diary Mobile Application (iOS)</li>
-                                <li>OMDb Movie Nomination Website (React)</li>
-                                <li>Rate My Scholar Website (React)</li>
+                                <li><b>WNHL Mobile Application (iOS and Android)</b> - A navigational app for tracking games and statistics of the Welland Niagara Hockey League. Written in Swift and Java respectively.</li>
+                                <li><b>Rose Cottage Visiting Volunteers Mobile Applications (iOS/Android/React)</b> - Administrative site written in React that manages the database of both iOS and Android applications that allows users and admins alike to access the services of Rose Cottage more easily. Written in SwiftUI and Kotlin respectively.</li>
+                                <li><b>Luna Diary Mobile Application (iOS)</b> - Diary app with a myriad of means to navigate many different dates for entries with the ability to export entries as PDFs. Written in SwiftUI.</li>
+                                <li><b>OMDb Movie Nomination Website (React)</b> - A website utilizing the OMDb API to provide a means to search for many movies and subsequently nominate them. Written in React Typescript. </li>
+                                <li><b>Rate My Scholar Website (React)</b> - A website that takes inspiration from RateMyProfessor but extends to scholars and staff alike. Written in React.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div className='row'>
-                    <div className=" col d-flex justify-content-center">
-                        <div className='header'>
-                            Skills
-                        </div>
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className="mb-3 col d-flex justify-content-center">
-                        <div className='list'>
-                           My proficiencies lie in frontend development of web applications and mobile applications.
-                           <br/>
-                           Significant experience with the React framework and experienced in SwiftUI and Java.
-                        </div>
-                    </div>
-                </div>
+               
 
             {/* Second container end below */}
             </div> 
