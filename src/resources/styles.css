@@ -3,13 +3,23 @@
     font-family: "Lato-Bold";
 }
 
+.headerComponent{
+    background: linear-gradient( #000000,#CE203C);
+}
 
 
 .subtitle{
     font-size: 200%;
+    text-align: center;
 }
 
 .desc{
+    font-size: 125%;
+    font-family: "Lato-Regular";
+    text-align: center;
+}
+
+.list{
     font-size: 125%;
     font-family: "Lato-Regular";
 }

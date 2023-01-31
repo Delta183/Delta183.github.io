@@ -1,6 +1,6 @@
 import React from 'react';
 import cat from '../resources/cat.jpeg';
-import bgImage from '../resources/IMG_9957.JPG';
+//import bgImage from '../resources/IMG_9957.JPG';
 import Button from 'react-bootstrap/Button';
 import resumePDF from '../resources/Daniel Figueroa - Resume January 2023.pdf';
 
@@ -19,7 +19,7 @@ function HomeComponent() {
         
         <div>
             <div className='container-fluid'>
-                <div style={{backgroundImage: `url(${bgImage})` }}>
+                <div className='headerComponent'>
                     {/* This is a preferable way of controlling the elements like with Swift */}
                     <div className='row'>
                         {/* d-flex needs to be on whichever element requires grid work */}
@@ -35,11 +35,16 @@ function HomeComponent() {
                         </div>
                     </div>
 
-                
+                    <div className='row'>
+                        {/* d-flex needs to be on whichever element requires grid work */}
+                        <div className=" col d-flex justify-content-center">
+                            <div className='header'>Email: danfigueroa81@gmail.com</div>
+                        </div>
+                    </div>
                     
                     <div className='row'>
                         {/* d-flex needs to be on whichever element requires grid work */}
-                        <div className="mb-4 col d-flex justify-content-center">
+                        <div className="m-3 col d-flex justify-content-center">
                             {/* <div className='subtitle' >Dreamer, Developer, Zoomer</div> */}
                             <Button variant="primary" onClick={onResumeClick}>My Resume</Button>{' '}
                         </div>
@@ -50,9 +55,11 @@ function HomeComponent() {
                 <div className='row'>
                     <div className="mt-1 col d-flex justify-content-center">
                         <div className='desc'>
-                            I am a new Computer Science Graduate from Brock University and decided it is high time to make a website to compile
-                            my projects and my thoughts. I like to keep things simple and always striving to improve. I do have a particular affinity
-                            for web and mobile applications.
+                            Software Developer who enjoys making web and mobile applications.
+                            <br/> 
+                            Passionate about games, music and seeing the world.
+                            <br/>
+                            I like to keep things simple and always striving to improve.
                         </div>
                     </div>
                 </div>
@@ -66,7 +73,7 @@ function HomeComponent() {
                 </div>
                 <div className='row'>
                     <div className="mt-1 col d-flex justify-content-start">
-                        <div className='desc'>
+                        <div className='list'>
                             <ul>
                                 <li>WNHL Mobile Application</li>
                                 <li>Rose Cottage Visiting Volunteers Mobile Applications</li>
@@ -85,7 +92,7 @@ function HomeComponent() {
                 </div>
                 <div className='row'>
                     <div className="mt-1 col d-flex justify-content-start">
-                        <div className='desc'>
+                        <div className='list'>
                             <ul>
                                 <li>Fire Emblem Mod</li>
                                 <li>TBA</li>
