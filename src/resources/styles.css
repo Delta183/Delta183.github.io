@@ -1,7 +1,9 @@
 .title{
     font-size: 300%;
-    font-weight: bold;
+    font-family: "Lato-Bold";
 }
+
+
 
 .subtitle{
     font-size: 200%;
@@ -9,13 +11,34 @@
 
 .desc{
     font-size: 125%;
+    font-family: "Lato-Regular";
 }
 
 .header{
     font-size: 175%;
-    text-decoration: underline 
+    font-family: "Lato-Bold";
+    text-decoration: underline;
 }
 
 .container-fluid{
     padding: 0;
  }
+
+ @font-face {
+    font-family: "Lato-Bold";   /*Can be any text*/
+    font-weight: 800;
+    src: local("Lato-Bold"),
+      url("../resources/fonts/Lato/Lato-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Lato-Light";   /*Can be any text*/
+    src: local("Lato-Light"),
+      url("../resources/fonts/Lato/Lato-Light.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Lato-Regular";   /*Can be any text*/
+    src: local("Lato-Regular"),
+      url("../resources/fonts/Lato/Lato-Regular.ttf") format("truetype");
+  }
