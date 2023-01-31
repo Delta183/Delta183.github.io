@@ -17,9 +17,9 @@ function HomeComponent() {
     
     return (
         
-        <div>
+        <div className='headerComponent'>
             <div className='container-fluid'>
-                <div className='headerComponent'>
+                <div >
                     {/* This is a preferable way of controlling the elements like with Swift */}
                     <div className='row'>
                         {/* d-flex needs to be on whichever element requires grid work */}
@@ -30,80 +30,76 @@ function HomeComponent() {
                     
                     <div className='row'>
                         {/* d-flex needs to be on whichever element requires grid work */}
-                        <div className="mt-1 col d-flex justify-content-center">
+                        <div className="col d-flex justify-content-center">
                             <div className='title' >Daniel Figueroa</div>
                         </div>
                     </div>
 
-                    <div className='row'>
-                        {/* d-flex needs to be on whichever element requires grid work */}
-                        <div className=" col d-flex justify-content-center">
-                            <div className='header'>Email: danfigueroa81@gmail.com</div>
-                        </div>
-                    </div>
-                    
-                    <div className='row'>
-                        {/* d-flex needs to be on whichever element requires grid work */}
-                        <div className="m-3 col d-flex justify-content-center">
-                            {/* <div className='subtitle' >Dreamer, Developer, Zoomer</div> */}
-                            <Button variant="primary" onClick={onResumeClick}>My Resume</Button>{' '}
-                        </div>
-                    </div>
+                  
                 </div>
             </div>
             <div className='container'>
                 <div className='row'>
+                    
+                </div>
+                <div className='row'>
+                        {/* d-flex needs to be on whichever element requires grid work */}
+                        <div className="mt-2 col d-flex justify-content-center">
+                            {/* <div className='subtitle' >Dreamer, Developer, Zoomer</div> */}
+                            <Button variant="dark" onClick={onResumeClick}>My Resume</Button>{' '}
+                        </div>
+                    </div>
+                <div className='row'>
                     <div className="mt-1 col d-flex justify-content-center">
+                        <div className='header'>
+                            About Me
+                        </div>
+                        
+                    </div>
+                </div>
+                <div className=" col d-flex justify-content-center">
                         <div className='desc'>
-                            Software Developer who enjoys making web and mobile applications.
+                            Bachelor in Computer Science who enjoys making web and mobile applications.
                             <br/> 
                             Passionate about games, music and seeing the world.
                             <br/>
                             I like to keep things simple and always striving to improve.
                         </div>
                     </div>
-                </div>
-
                 <div className='row'>
-                    <div className="mt-1 col d-flex justify-content-start">
+                    <div className="mt-1 col d-flex justify-content-center">
                         <div className='header'>
                             Projects
                         </div>
                     </div>
                 </div>
                 <div className='row'>
-                    <div className="mt-1 col d-flex justify-content-start">
+                    <div className="mt-1 col d-flex justify-content-center">
                         <div className='list'>
                             <ul>
-                                <li>WNHL Mobile Application</li>
-                                <li>Rose Cottage Visiting Volunteers Mobile Applications</li>
-                                <li>Luna Diary Mobile Application</li>
+                                <li>WNHL Mobile Application (iOS and Android) - A navigational app for tracking games and statistics</li>
+                                <li>Rose Cottage Visiting Volunteers Mobile Applications (iOS and Android)</li>
+                                <li>Luna Diary Mobile Application (iOS)</li>
+                                <li>OMDb Movie Nomination Website (React)</li>
+                                <li>Rate My Scholar Website (React)</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <div className='row'>
-                    <div className="mt-1 col d-flex justify-content-start">
+                    <div className=" col d-flex justify-content-center">
                         <div className='header'>
-                            Ideas for Upcoming Projects
+                            Skills
                         </div>
                     </div>
                 </div>
                 <div className='row'>
-                    <div className="mt-1 col d-flex justify-content-start">
+                    <div className="mb-3 col d-flex justify-content-center">
                         <div className='list'>
-                            <ul>
-                                <li>Fire Emblem Mod</li>
-                                <li>TBA</li>
-                                <li>TBA</li>
-                                <li>Fire Emblem Mod</li>
-                                <li>TBA</li>
-                                <li>TBA</li>
-                                <li>Fire Emblem Mod</li>
-                                <li>TBA</li>
-                                <li>TBA</li>
-                            </ul>
+                           My proficiencies lie in frontend development of web applications and mobile applications.
+                           <br/>
+                           Significant experience with the React framework and experienced in SwiftUI and Java.
                         </div>
                     </div>
                 </div>
