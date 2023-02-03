@@ -10,15 +10,20 @@ import FooterComponent from './FooterComponent';
 import CardComponent from './CardComponent';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 // functions in TS need "function" preceding them
 function onResumeClick() {
     window.open(resumePDF);
   }
 
-function HomeComponent() {
-    
+  function onProjectClick(link: string | URL) {
+    window.open(link);
+  }
+
+
+const HomeComponent = () => {
+
+   
     return (
         
         <div className='headerComponent'>
@@ -98,29 +103,35 @@ function HomeComponent() {
                     <Row>
                         <CardComponent 
                             title={'WNHL Mobile Application (iOS and Android)'}
-                            description={'A navigational app for tracking games and statistics of the Welland Niagara Hockey League.'}
+                            description={'A mobile app for tracking games and statistics of the Wednesday Night Hockey League and the services they provide with respect to their games.'}
                             langArray={['Swift','Java']}                    
                         />
                         <CardComponent 
                             title={'Rose Cottage Visiting Volunteers Mobile Applications (iOS and Android)'}
-                            description={'Administrative site written in React that manages the database of both iOS and Android applications that allows users and admins alike to access the services of Rose Cottage more easily.'}
+                            description={'Administrative site written in React that manages the database of both iOS and Android applications that allows users and admins alike to access the services of Rose Cottage more easily. Currently in progress.'}
                             langArray={['SwiftUI','Kotlin','React']}                    
                         />
+                        <div onClick={() => onProjectClick("https://github.com/Delta183/Luna-Diary")}>
                          <CardComponent 
                             title={'Luna Diary Mobile Application (iOS)'}
-                            description={'Diary app with a myriad of means to navigate many different dates for entries with the ability to export entries as PDFs.'}
+                            description={'Mobile diary application which allows one to read, write, delete and update entries locally with a myriad of means to navigate many different dates for entries with the additional feature to export entries as PDFs. Click the component to view repository.'}
                             langArray={['SwiftUI']}                    
                         />
+                        </div>
+                        <div onClick={() => onProjectClick("https://github.com/Delta183/shoppies")}>
                          <CardComponent 
                             title={'OMDb Movie Nomination Website'}
-                            description={'A website utilizing the OMDb API to provide a means to search for many movies and subsequently nominate them.'}
+                            description={'A website utilizing the OMDb API to provide a means to search for many movies and subsequently nominate them. Click the component to view repository.'}
                             langArray={['React', 'Typescript']}                    
                         />
-                         <CardComponent 
+                        </div>
+                        <div onClick={() => onProjectClick("https://github.com/Delta183/testRateMyScholarReact")}>
+                         <CardComponent
                             title={'Rate My Scholar Website'}
-                            description={'A website that takes inspiration from RateMyProfessor but extends to scholars and staff alike.'}
+                            description={'A website that takes inspiration from RateMyProfessor but extends to scholars and staff alike. Click the component to view repository.'}
                             langArray={['React']}                    
                         />
+                        </div>
                     </Row>
                 </Container>
               

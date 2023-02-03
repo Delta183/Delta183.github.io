@@ -12,10 +12,10 @@ interface IProps {
 }
 
 const CardComponent = (props: IProps) => {
-
+   
+      
     return(
-        <div>
-            
+        <div >
             <Card 
                 className="mb-4"
                 bg="dark"
