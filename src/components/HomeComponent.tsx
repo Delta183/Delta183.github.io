@@ -1,5 +1,5 @@
 import React from 'react';
-import cat from '../resources/cat.jpeg';
+import daniel from  '../resources/daniel.jpeg';
 //import bgImage from '../resources/IMG_9957.JPG';
 import Button from 'react-bootstrap/Button';
 import resumePDF from '../resources/Daniel Figueroa - Resume January 2023.pdf';
@@ -33,7 +33,7 @@ const HomeComponent = () => {
                     <div className='row'>
                         {/* d-flex needs to be on whichever element requires grid work */}
                         <div className="mt-5 col d-flex justify-content-center">
-                            <img src={cat} alt="cat" width={"300px"}/>
+                            <img src={daniel} alt="cat" width={"300px"}/>
                         </div>
                     </div>
                     
@@ -55,7 +55,7 @@ const HomeComponent = () => {
                         {/* d-flex needs to be on whichever element requires grid work */}
                         <div className="mb-3 col d-flex justify-content-center">
                             {/* <div className='subtitle' >Dreamer, Developer, Zoomer</div> */}
-                            <Button variant="dark" onClick={onResumeClick}>My Resume</Button>{' '}
+                            <Button size="lg" variant="dark" onClick={onResumeClick}>My Resume</Button>{' '}
                         </div>
                     </div>
                 <div className='row'>
