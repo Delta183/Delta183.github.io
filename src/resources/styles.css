@@ -7,6 +7,9 @@
     background: rgb(252, 226, 226)
 }
 
+img {
+    border-radius: 50%;
+}
 
 .subtitle{
     font-size: 200%;
