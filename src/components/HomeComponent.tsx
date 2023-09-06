@@ -87,7 +87,7 @@ const HomeComponent = () => {
                         <div className='desc'>
                            My proficiencies lie in frontend development of web applications and mobile applications.
                            <br/>
-                           Very experienced with the React, SwiftUI and Java.
+                           Very experienced with the MERN stack, TypeScript, SwiftUI, Python and Java.
                         </div>
                     </div>
                 </div>
@@ -101,6 +101,13 @@ const HomeComponent = () => {
                   {/* Cards for the projects below */}
                   <Container fluid>
                     <Row>
+                        <div onClick={() => onProjectClick("https://github.com/Delta183/Food-Tracker-TS")}>
+                        <CardComponent
+                            title={'Food Tracker Website'}
+                            description={'A passion project that allows users to select foods from a food database. It displays comprehensive stats about the selections and allows them to save these meals for all users to peruse and refer to for their own health. Click the component to view repository.'}
+                            langArray={['MongoDB', 'Node.js', 'Express.js', 'React', "TypeScript"]}                    
+                        />
+                        </div>
                         <CardComponent 
                             title={'WNHL Mobile Application (iOS and Android)'}
                             description={'A mobile app for tracking games and statistics of the Wednesday Night Hockey League and the services they provide with respect to their games.'}
@@ -126,12 +133,13 @@ const HomeComponent = () => {
                         />
                         </div>
                         <div onClick={() => onProjectClick("https://github.com/Delta183/testRateMyScholarReact")}>
-                         <CardComponent
+                        <CardComponent
                             title={'Rate My Scholar Website'}
                             description={'A website that takes inspiration from RateMyProfessor but extends to scholars and staff alike. Click the component to view repository.'}
                             langArray={['React']}                    
                         />
                         </div>
+                      
                     </Row>
                 </Container>
               
